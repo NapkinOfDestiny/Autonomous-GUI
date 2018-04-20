@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="openFileDialog_XmlAuto.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="textBox_xmlViewer.Text" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!--
+================================================================================
+This program causes the robot to drive to from the middle drive to the left or 
+the right.
+
+ - drive forward
+
+ - if switch is left turn -60
+ - drive forward to switch
+ - deposit cargo
+
+ - if switch is right turn 60 
+ - drive forward to switch 
+ - deposit cargo
+
+ - stop
+
+================================================================================
+--&gt;
+&lt;Program name="Mid to Sw + Box"&gt;
+
+   &lt;!--
+   =============================================================================
+   Program Steps and Actions...
+   =============================================================================
+--&gt;
+
+&lt;!---------------------------///Preparation///-------------------------------- --&gt;
+
+&lt;Step id="Preparation" entry="false" exit="false"&gt;
+	&lt;Action id="Preparation_A2" parent="Preparation" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+
+&lt;!---------------------------///START///-------------------------------------- --&gt;
+
+&lt;Step id="DriveForward" entry="true" exit="false"&gt;
+	&lt;Action id="snapshot_A1" parent="DriveForward" classname="InitialGyroSnapshot"&gt;
+	&lt;/Action&gt;
+	&lt;Action id="DriveForward_A2" parent="DriveForward" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;1.0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="CHECK_SWITCH_LOCATION" entry="false" exit="false"&gt;
+&lt;/Step&gt;
+
+
+&lt;!--Switch LEFT//////////////-------------------------------------------------------------- --&gt;
+
+&lt;Step id="ZeroPointTurnTo_L" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnTo_L_A1" parent="ZeroPointTurnTo_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;		
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveDiag_L" entry="false" exit="false"&gt;
+	&lt;Action id="DriveDiag_L_A1" parent="DriveDiag_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;1.0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnTowardSwitch_L" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnTowardSwitch_L_A1" parent="ZeroPointTurnTowardSwitch_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;!--//// Drive Up Slower ///// --&gt;
+
+&lt;Step id="DriveToSwitchFast_L" entry="false" exit="false"&gt;
+	&lt;Action id="DriveToSwitchFast_L_A1" parent="DriveToSwitchFast_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;1.0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveToSwitchSlow_L" entry="false" exit="false"&gt;
+	&lt;Action id="DriveToSwitchSlow_L_A1" parent="DriveToSwitchSlow_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0.5&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="LaunchCargo_L" entry="false" exit="false"&gt;
+	&lt;Action id="LaunchCargo_L_A1" parent="LaunchCargo_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0.5&lt;/param&gt;
+		&lt;param id="ramp_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="driver_shoot"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;!--//// PART 2 L ///// --&gt;
+
+&lt;Step id="DriveBack_L" entry="false" exit="false"&gt;
+	&lt;Action id="DriveBack_L_A1" parent="DriveBack_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;-0.9&lt;/param&gt;
+		&lt;param id="ramp_enabled"&gt;0&lt;/param&gt;
+		&lt;param id="driver_shoot"&gt;0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnAwayFromSwitch_L" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnAwayFromSwitch_L_A1" parent="ZeroPointTurnAwayFromSwitch_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveAwayDiag_L" entry="false" exit="false"&gt;
+	&lt;Action id="DriveAwayDiag_L_A1" parent="DriveAwayDiag_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;-0.9&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnTowardBox_L" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnTowardBox_L_A1" parent="ZeroPointTurnTowardBox_L" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;param id="collector_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;0.6&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;-0.7&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+
+&lt;!--Switch RIGHT/////////----------------------------------------------------------------------- --&gt;
+
+&lt;Step id="ZeroPointTurnTo_R" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnTo_R_A1" parent="ZeroPointTurnTo_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveDiag_R" entry="false" exit="false"&gt;
+	&lt;Action id="DriveDiag_R_A1" parent="DriveDiag_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;1.0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnTowardSwitch_R" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnTowardSwitch_R_A1" parent="ZeroPointTurnTowardSwitch_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;!--//// Drive Up Slower ///// --&gt;
+
+&lt;Step id="DriveToSwitchFast_R" entry="false" exit="false"&gt;
+	&lt;Action id="DriveToSwitchFast_R_A1" parent="DriveToSwitchFast_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;1.0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveToSwitchSlow_R" entry="false" exit="false"&gt;
+	&lt;Action id="DriveToSwitchSlow_R_A1" parent="DriveToSwitchSlow_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0.5&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="LaunchCargo_R" entry="false" exit="false"&gt;
+	&lt;Action id="LaunchCargo_R_A1" parent="LaunchCargo_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0.5&lt;/param&gt;
+		&lt;param id="ramp_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="driver_shoot"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;!--//// PART 2 R ///// --&gt;
+
+&lt;Step id="DriveBack_R" entry="false" exit="false"&gt;
+	&lt;Action id="DriveBack_R_A1" parent="DriveBack_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;-1.0&lt;/param&gt;
+		&lt;param id="ramp_enabled"&gt;0&lt;/param&gt;
+		&lt;param id="driver_shoot"&gt;0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnAwayFromSwitch_R" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnAwayFromSwitch_R_A1" parent="ZeroPointTurnAwayFromSwitch_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveAwayDiag_R" entry="false" exit="false"&gt;
+	&lt;Action id="DriveAwayDiag_R_A1" parent="DriveAwayDiag_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;-1.0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnTowardBox_R" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnTowardBox_R_A1" parent="ZeroPointTurnTowardBox_R" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;param id="collector_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;0.6&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;-0.7&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+
+&lt;!-------------------------------///STOP///------------------------------------------ --&gt;
+
+
+
+&lt;Step id="ExtendArms" entry="false" exit="false"&gt;
+	&lt;Action id="ExtendArms_A1" parent="ExtendArms" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0.0&lt;/param&gt;
+		&lt;param id="collector_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;0.6&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;-0.7&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveToCube" entry="false" exit="false"&gt;
+	&lt;Action id="DriveToCube_A1" parent="DriveToCube" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;-0.7&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;0.4&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;-0.4&lt;/param&gt;
+		&lt;param id="collector_intake_r"&gt;1&lt;/param&gt;		
+		&lt;param id="collector_intake_l"&gt;1&lt;/param&gt;	
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="GrabCube" entry="false" exit="false"&gt;
+	&lt;Action id="GrabCube_A1" parent="GrabCube" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0.0&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;-0.4&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;0.5&lt;/param&gt;
+		&lt;param id="collector_intake_r"&gt;1&lt;/param&gt;		
+		&lt;param id="collector_intake_l"&gt;1&lt;/param&gt;	
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="DriveAway" entry="false" exit="false"&gt;
+	&lt;Action id="DriveAway_A1" parent="DriveAway" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0.6&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;-0.4&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;0.5&lt;/param&gt;
+		&lt;param id="collector_intake_r"&gt;1&lt;/param&gt;		
+		&lt;param id="collector_intake_l"&gt;1&lt;/param&gt;		
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="ZeroPointTurnToStop" entry="false" exit="false"&gt;
+	&lt;Action id="ZeroPointTurnToStop_A1" parent="ZeroPointTurnToStop" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;param id="drivebase_throttle"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;1&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;-0.3&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;0.4&lt;/param&gt;
+		&lt;param id="collector_intake_r"&gt;1&lt;/param&gt;		
+		&lt;param id="collector_intake_l"&gt;1&lt;/param&gt;	
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+&lt;Step id="Stop" entry="false" exit="true"&gt;
+	&lt;Action id="Stop_A1" parent="Stop" classname="OIDataFaker"&gt;
+		&lt;param id="drivebase_enabled"&gt;1&lt;/param&gt;
+		&lt;!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS --&gt;
+		&lt;param id="drivebase_throttle"&gt;0.0&lt;/param&gt;
+		&lt;param id="drivebase_turbo_button"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_heading"&gt;0.0&lt;/param&gt;
+		&lt;param id="right_collector_arm"&gt;0&lt;/param&gt;
+		&lt;param id="left_collector_arm"&gt;0&lt;/param&gt;
+		&lt;param id="collector_intake_l"&gt;0&lt;/param&gt;
+		&lt;param id="collector_intake_r"&gt;0&lt;/param&gt;
+		&lt;param id="drivebase_anti_turbo_button"&gt;0&lt;/param&gt;
+		&lt;param id="driver_shoot"&gt;0&lt;/param&gt;
+	&lt;/Action&gt;
+&lt;/Step&gt;
+
+
+   &lt;!--
+   =============================================================================
+   Conditions...
+   =============================================================================
+--&gt;
+
+&lt;!--------------------------///Preparation///-------------------------------- --&gt;
+
+&lt;Condition id="C0" parent="NULL" type="Unary" operation="NULL" classname="SliderControlledTimeElapsedCondition"&gt;
+	&lt;param id="slider_number"&gt;0&lt;/param&gt;
+&lt;/Condition&gt;
+
+
+&lt;!---------------------------///START///---------------------------------------------- --&gt;
+
+&lt;Condition id="C1" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C1_DistanceDriven" parent="C1" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;3&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-75&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-75&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C1_TimeElapsed" parent="C1" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;4.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+
+&lt;!--------------------------///Primary Decisions///----------------------------------------------- --&gt;
+
+&lt;Condition id="switch_Is_Right" parent="NULL" type="Unary" operation="NULL" classname="BooleanTester"&gt;
+	&lt;param id="ifthis"&gt;switch_location&lt;/param&gt;
+	&lt;param id="target"&gt;true&lt;/param&gt;
+	&lt;param id="store"&gt;mirror&lt;/param&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="switch_Is_Left" parent="NULL" type="Unary" operation="NULL" classname="BooleanTester"&gt;
+	&lt;param id="ifthis"&gt;switch_location&lt;/param&gt;
+	&lt;param id="target"&gt;false&lt;/param&gt;
+	&lt;param id="store"&gt;mirror&lt;/param&gt;
+&lt;/Condition&gt;
+
+
+&lt;!---------------------------///TO SWITCH LEFT///---------------------------------------------- --&gt;
+
+&lt;Condition id="C0L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C0L_spin" parent="C0L" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;-45.0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;20&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="heading"&gt;0.8&lt;/param&gt;
+		&lt;param id="deadband"&gt;6.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C0L_TimeElapsed" parent="C0L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C1L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C1L_DistanceDriven" parent="C1L" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;-45&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;20&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-700&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-700&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C1L_TimeElapsed" parent="C1L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;4.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C2L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C2L_spin" parent="C2L" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;20&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="heading"&gt;0.8&lt;/param&gt;
+		&lt;param id="deadband"&gt;5.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C2L_TimeElapsed" parent="C2L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+
+&lt;!--//// Drive Up Slower ///// --&gt;
+
+&lt;Condition id="C3L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C3L_DistanceDriven" parent="C3L" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-180&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-180&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C3L_TimeElapsed" parent="C3L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C4L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C4L_DistanceDriven" parent="C4L" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-400&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-400&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C4L_TimeElapsed" parent="C4L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C5L" parent="NULL" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+	&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+&lt;/Condition&gt;
+
+&lt;!--//// PART 2 L ///// --&gt;
+
+&lt;Condition id="C6L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C6L_DistanceDriven" parent="C6L" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;400&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;400&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C6L_TimeElapsed" parent="C6L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C7L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C7L_spin" parent="C7L" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;-60&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="heading"&gt;0.8&lt;/param&gt;
+		&lt;param id="deadband"&gt;6.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C7L_TimeElapsed" parent="C7L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C8L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C8L_DistanceDriven" parent="C8L" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;-60&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;450&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;450&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C8L_TimeElapsed" parent="C8L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+
+&lt;!---------------------------///TO SWITCH RIGHT///---------------------------------------------- --&gt;
+
+&lt;Condition id="C0R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C0R_spin" parent="C0R" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;45.0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="heading"&gt;0.8&lt;/param&gt;
+		&lt;param id="deadband"&gt;6.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C0R_TimeElapsed" parent="C0R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C1R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C1R_DistanceDriven" parent="C1R" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;45&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;20&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-500&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-500&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C1R_TimeElapsed" parent="C1R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;4.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C2R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C2R_spin" parent="C2R" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="heading"&gt;0.8&lt;/param&gt;
+		&lt;param id="deadband"&gt;6.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C2R_TimeElapsed" parent="C2R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;!--//// Drive Up Slower ///// --&gt;
+
+&lt;Condition id="C3R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C3R_DistanceDriven" parent="C3R" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-180&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-180&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C3R_TimeElapsed" parent="C3R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C4R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C4R_DistanceDriven" parent="C4R" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-400&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-400&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C4R_TimeElapsed" parent="C4R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C5R" parent="NULL" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+	&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+&lt;/Condition&gt;
+
+&lt;!--//// PART 2 R ///// --&gt;
+
+&lt;Condition id="C6R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C6R_DistanceDriven" parent="C6R" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;400&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;400&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C6R_TimeElapsed" parent="C6R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C7R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C7R_spin" parent="C7R" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;60&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="heading"&gt;0.8&lt;/param&gt;
+		&lt;param id="deadband"&gt;6.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C7R_TimeElapsed" parent="C7R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C8R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C8R_DistanceDriven" parent="C8R" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;60&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;370&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;370&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C8R_TimeElapsed" parent="C8R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+
+&lt;!--------------------------///Line Up///----------------------------------------------- --&gt;
+
+&lt;Condition id="CENTER_R" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="CENTER_R_spin" parent="CENTER_R" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;180&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;50&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.6&lt;/param&gt;
+		&lt;param id="heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="deadband"&gt;5.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="CENTER_R_TimeElapsed" parent="CENTER_R" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="CENTER_L" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="CENTER_L_spin" parent="CENTER_L" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;-180&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;50&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.6&lt;/param&gt;
+		&lt;param id="heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="deadband"&gt;5.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="CENTER_L_TimeElapsed" parent="CENTER_L" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;!--------------------------///Grab Cube///----------------------------------------------- --&gt;
+
+&lt;Condition id="C01" parent="NULL" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+	&lt;param id="wait_time"&gt;1.0&lt;/param&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C02" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C02_DistanceDriven" parent="C02" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;180&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;500&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;500&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C02_TimeElapsed" parent="C02" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;3.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C03" parent="NULL" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+	&lt;param id="wait_time"&gt;0.2&lt;/param&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C04" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C04_DistanceDriven" parent="C04" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition"&gt;
+		&lt;param id="sweep_angle"&gt;180&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;10&lt;/param&gt;
+		&lt;param id="heading"&gt;0.5&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.2&lt;/param&gt;
+		&lt;param id="angle_deadband"&gt;0&lt;/param&gt;
+		&lt;param id="heading_oi_name"&gt;drivebase_heading&lt;/param&gt;
+		&lt;param id="left_encoder_si_name"&gt;LEFT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="right_encoder_si_name"&gt;RIGHT_DRIVE_ENCODER&lt;/param&gt;
+		&lt;param id="left_ticks"&gt;-200&lt;/param&gt;
+		&lt;param id="right_ticks"&gt;-200&lt;/param&gt;
+		&lt;param id="enc_selection"&gt;SELECT_EITHER_ENCODER&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C04_TimeElapsed" parent="C04" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;2.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+&lt;Condition id="C05" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition"&gt;
+	&lt;Condition id="C05_spin" parent="C05" type="Unary" operation="NULL" classname="RotatedByAnglePreciseCondition"&gt;
+		&lt;param id="sweep_angle"&gt;0&lt;/param&gt;
+		&lt;param id="slowdown_angle"&gt;50&lt;/param&gt;
+		&lt;param id="minimum_heading"&gt;0.6&lt;/param&gt;
+		&lt;param id="heading"&gt;0.7&lt;/param&gt;
+		&lt;param id="deadband"&gt;5.0&lt;/param&gt;
+		&lt;param id="oi_name"&gt;drivebase_heading&lt;/param&gt;
+	&lt;/Condition&gt;
+	&lt;Condition id="C05_TimeElapsed" parent="C05" type="Unary" operation="NULL" classname="TimeElapsedCondition"&gt;
+		&lt;param id="wait_time"&gt;3.0&lt;/param&gt;
+	&lt;/Condition&gt;
+&lt;/Condition&gt;
+
+
+   &lt;!--
+   =============================================================================
+   Transitions...
+   =============================================================================
+--&gt;
+
+&lt;!--------------------------///Preparation///----------------------------------------------- --&gt;
+&lt;Transition id="T0" fromstep="Preparation" tostep="DriveForward" condition="C0"/&gt;
+
+
+&lt;!---------------------------///Start///---------------------------------------------- --&gt;
+&lt;Transition id="T1" fromstep="DriveForward" tostep="CHECK_SWITCH_LOCATION" condition="C1"/&gt;
+
+
+&lt;!----------------------------///Primary Decisions///--------------------------------------------- --&gt;
+&lt;Transition id="T2" fromstep="CHECK_SWITCH_LOCATION" tostep="ZeroPointTurnTo_L" condition="switch_Is_Left"/&gt;
+&lt;Transition id="T3" fromstep="CHECK_SWITCH_LOCATION" tostep="ZeroPointTurnTo_R" condition="switch_Is_Right"/&gt;
+
+
+&lt;!-----------------------------///TO SWITCH LEFT///-------------------------------------------- --&gt;
+&lt;Transition id="T4" fromstep="ZeroPointTurnTo_L" tostep="DriveDiag_L" condition="C0L"/&gt;
+&lt;Transition id="T5" fromstep="DriveDiag_L" tostep="ZeroPointTurnTowardSwitch_L" condition="C1L"/&gt;
+&lt;Transition id="T6" fromstep="ZeroPointTurnTowardSwitch_L" tostep="DriveToSwitchFast_L" condition="C2L"/&gt;
+
+&lt;Transition id="T7" fromstep="DriveToSwitchFast_L" tostep="DriveToSwitchSlow_L" condition="C3L"/&gt;
+&lt;Transition id="T8" fromstep="DriveToSwitchSlow_L" tostep="LaunchCargo_L" condition="C4L"/&gt;
+&lt;Transition id="T9" fromstep="LaunchCargo_L" tostep="DriveBack_L" condition="C5L"/&gt;
+
+&lt;!--//// PART 2 L ///// --&gt;
+
+&lt;Transition id="T10" fromstep="DriveBack_L" tostep="ZeroPointTurnAwayFromSwitch_L" condition="C6L"/&gt;
+&lt;Transition id="T11" fromstep="ZeroPointTurnAwayFromSwitch_L" tostep="DriveAwayDiag_L" condition="C7L"/&gt;
+&lt;Transition id="T12" fromstep="DriveAwayDiag_L" tostep="ZeroPointTurnTowardBox_R" condition="C8L"/&gt;
+&lt;Transition id="T13" fromstep="ZeroPointTurnTowardBox_R" tostep="ExtendArms" condition="CENTER_L"/&gt;
+
+
+&lt;!-----------------------------///TO SWITCH RIGHT///-------------------------------------------- --&gt;
+&lt;Transition id="T16" fromstep="ZeroPointTurnTo_R" tostep="DriveDiag_R" condition="C0R"/&gt;
+&lt;Transition id="T17" fromstep="DriveDiag_R" tostep="ZeroPointTurnTowardSwitch_R" condition="C1R"/&gt;
+&lt;Transition id="T18" fromstep="ZeroPointTurnTowardSwitch_R" tostep="DriveToSwitchFast_R" condition="C2R"/&gt;
+
+&lt;Transition id="T19" fromstep="DriveToSwitchFast_R" tostep="DriveToSwitchSlow_R" condition="C3R"/&gt;
+&lt;Transition id="T20" fromstep="DriveToSwitchSlow_R" tostep="LaunchCargo_R" condition="C4R"/&gt;
+&lt;Transition id="T21" fromstep="LaunchCargo_R" tostep="DriveBack_R" condition="C5R"/&gt;
+
+&lt;!--//// PART 2 R ///// --&gt;
+
+
+&lt;Transition id="T22" fromstep="DriveBack_R" tostep="ZeroPointTurnAwayFromSwitch_R" condition="C6R"/&gt;
+&lt;Transition id="T23" fromstep="ZeroPointTurnAwayFromSwitch_R" tostep="DriveAwayDiag_R" condition="C7R"/&gt;
+&lt;Transition id="T24" fromstep="DriveAwayDiag_R" tostep="ZeroPointTurnTowardBox_L" condition="C8R"/&gt;
+&lt;Transition id="T25" fromstep="ZeroPointTurnTowardBox_L" tostep="ExtendArms" condition="CENTER_R"/&gt;
+
+
+
+
+
+
+
+&lt;Transition id="T26" fromstep="ExtendArms" tostep="DriveToCube" condition="C01"/&gt;
+&lt;Transition id="T27" fromstep="DriveToCube" tostep="GrabCube" condition="C02"/&gt;
+&lt;Transition id="T28" fromstep="GrabCube" tostep="DriveAway" condition="C03"/&gt;
+&lt;Transition id="T29" fromstep="DriveAway" tostep="ZeroPointTurnToStop" condition="C04"/&gt;
+&lt;Transition id="T30" fromstep="ZeroPointTurnToStop" tostep="Stop" condition="C05"/&gt;
+
+
+&lt;/Program&gt;
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>

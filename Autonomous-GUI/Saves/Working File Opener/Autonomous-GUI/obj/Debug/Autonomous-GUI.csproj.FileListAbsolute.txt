@@ -1,0 +1,10 @@
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\bin\Debug\Autonomous-GUI.exe.config
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\bin\Debug\Autonomous-GUI.exe
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\bin\Debug\Autonomous-GUI.pdb
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.csprojResolveAssemblyReference.cache
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous_GUI.MenuForm.resources
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous_GUI.Properties.Resources.resources
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.csproj.GenerateResource.cache
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.csproj.CoreCompileInputs.cache
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.exe
+c:\users\nicho\source\repos\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.pdb

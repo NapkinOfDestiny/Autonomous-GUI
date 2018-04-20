@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+================================================================================
+This program causes the robot to drive forward, and is
+comprised of 2 steps...
+ - DriveForward
+ - STOP
+================================================================================
+-->
+<Program name="Drive Foward">
+
+   <!--
+   =============================================================================
+   Program Steps and Actions...
+   =============================================================================
+-->
+
+<!--///Preparation/// -->
+
+<Step id="Preparation" entry="true" exit="false">
+   <Action id="Preparation_A2" parent="Preparation" classname="OIDataFaker">
+      <param id="drivebase_enabled">1</param>
+      <!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS -->
+      <param id="drivebase_throttle">0</param>
+      <param id="drivebase_turbo_button">1</param>
+   </Action>
+</Step>
+
+<!--///Start///-->
+
+<Step id="DriveForward" entry="false" exit="false">
+      <Action id="snapshot_A1" parent="DriveForward" classname="InitialGyroSnapshot">
+   </Action>
+   <Action id="DriveForward_A1" parent="DriveForward" classname="OIDataFaker">
+      <param id="drivebase_enabled">1</param>
+      <!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS -->
+      <param id="drivebase_turbo_button">1</param>s
+      <param id="drivebase_throttle">0.8</param>      
+   </Action>
+</Step>
+
+
+<!--//Stop -->
+
+<Step id="Stop" entry="false" exit="true">
+   <Action id="Stop_A1" parent="Stop" classname="OIDataFaker">
+      <param id="drivebase_enabled">1</param>
+      <!-- THROTTLE VALUES GO NEGATIVE FOR FORWARDS -->
+      <param id="drivebase_throttle">0.0</param>
+      <param id="drivebase_turbo_button">0</param>
+      <param id="drivebase_heading">0.0</param>
+   </Action>
+</Step>
+
+
+   <!--
+   =============================================================================
+   Conditions...
+   =============================================================================
+-->
+
+<!--\/Preparation///-->
+
+<Condition id="C0" parent="NULL" type="Unary" operation="NULL" classname="SliderControlledTimeElapsedCondition">
+   <param id="slider_number">0</param>
+</Condition>
+
+<!---///Start -->
+
+<Condition id="C1" parent="NULL" type="Composite" operation="OR" classname="CompositeCondition">
+   <Condition id="C1_DistanceDriven" parent="C1" type="Unary" operation="NULL" classname="DriveStraightWithEncodersCondition">
+      <param id="sweep_angle">0</param>
+      <param id="slowdown_angle">3</param>
+      <param id="heading">0.5</param>
+      <param id="minimum_heading">0</param>
+      <param id="angle_deadband">0</param>
+      <param id="heading_oi_name">drivebase_heading</param>
+      <param id="left_encoder_si_name">LEFT_DRIVE_ENCODER</param>
+      <param id="right_encoder_si_name">RIGHT_DRIVE_ENCODER</param>
+      <param id="left_ticks">-1200</param>
+      <param id="right_ticks">-1200</param>
+      <param id="enc_selection">SELECT_EITHER_ENCODER</param>
+   </Condition>
+   <Condition id="C1_TimeElapsed" parent="C1" type="Unary" operation="NULL" classname="TimeElapsedCondition">
+      <param id="wait_time">2.0</param>
+   </Condition>
+</Condition>
+
+   <!--
+   =============================================================================
+   Transitions...
+   =============================================================================
+-->
+
+<!---//Preparation - -->
+<Transition id="T0" fromstep="Preparation" tostep="DriveForward" condition="C0"/>
+
+<!---///Start -->
+<Transition id="T1" fromstep="DriveForward" tostep="Stop" condition="C1"/>
+
+</Program>

@@ -1,0 +1,10 @@
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\bin\Debug\TestGridDragDropetc.exe.config
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\bin\Debug\TestGridDragDropetc.exe
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\bin\Debug\TestGridDragDropetc.pdb
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csprojResolveAssemblyReference.cache
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.Form1.resources
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.Properties.Resources.resources
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csproj.GenerateResource.cache
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csproj.CoreCompileInputs.cache
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.exe
+c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.pdb
