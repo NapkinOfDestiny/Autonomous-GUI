@@ -18,4 +18,3 @@ C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\Autonomous-GUI\Autonomo
 C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.csproj.CoreCompileInputs.cache
 C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.exe
 C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous-GUI.pdb
-C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\Autonomous-GUI\Autonomous-GUI\obj\Debug\Autonomous_GUI.CustomMessageBoxStringInput.resources

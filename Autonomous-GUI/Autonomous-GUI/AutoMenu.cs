@@ -211,7 +211,8 @@ namespace Autonomous_GUI
 
             //create a new object to mess with send it the index to keep track of stuff            
             AutoStep autoStep = new AutoStep(newColumn.Name, dataGridView_AutoEditor.Columns[newColumn.Name].Index, false, false);
-
+            
+            //add it to the list so we can do stuff with it later
             autoSteps.Add(autoStep);
         }
 
@@ -227,6 +228,11 @@ namespace Autonomous_GUI
                 dataGridView_AutoEditor.Visible = false;
                 button_hideUnhideGridEditor.BackColor = System.Drawing.Color.IndianRed;
             }
+        }
+
+        private void button_addParam_Click(object sender, EventArgs e)
+        {
+            //this will need to add a cell under neath the right row that is selected and add it to a list in the autostep that is that row
         }
     }
 }

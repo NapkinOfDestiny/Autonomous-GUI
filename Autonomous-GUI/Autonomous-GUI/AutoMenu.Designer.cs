@@ -40,9 +40,12 @@
             this.notifyIcon_Output = new System.Windows.Forms.NotifyIcon(this.components);
             this.button_addStep = new System.Windows.Forms.Button();
             this.button_hideUnhideGridEditor = new System.Windows.Forms.Button();
+            this.button_addParam = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl_AutoViewer.SuspendLayout();
             this.tabPage1_Xml.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AutoEditor)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog_XmlAuto
@@ -55,7 +58,7 @@
             this.button_openAutoFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_openAutoFile.Location = new System.Drawing.Point(12, 12);
             this.button_openAutoFile.Name = "button_openAutoFile";
-            this.button_openAutoFile.Size = new System.Drawing.Size(102, 31);
+            this.button_openAutoFile.Size = new System.Drawing.Size(62, 38);
             this.button_openAutoFile.TabIndex = 0;
             this.button_openAutoFile.Text = "Open";
             this.button_openAutoFile.UseVisualStyleBackColor = true;
@@ -65,10 +68,10 @@
             // 
             this.tabControl_AutoViewer.Controls.Add(this.tabPage1_Xml);
             this.tabControl_AutoViewer.Controls.Add(this.tabPage2);
-            this.tabControl_AutoViewer.Location = new System.Drawing.Point(120, 0);
+            this.tabControl_AutoViewer.Location = new System.Drawing.Point(154, 12);
             this.tabControl_AutoViewer.Name = "tabControl_AutoViewer";
             this.tabControl_AutoViewer.SelectedIndex = 0;
-            this.tabControl_AutoViewer.Size = new System.Drawing.Size(675, 438);
+            this.tabControl_AutoViewer.Size = new System.Drawing.Size(611, 378);
             this.tabControl_AutoViewer.TabIndex = 1;
             // 
             // tabPage1_Xml
@@ -77,7 +80,7 @@
             this.tabPage1_Xml.Location = new System.Drawing.Point(4, 22);
             this.tabPage1_Xml.Name = "tabPage1_Xml";
             this.tabPage1_Xml.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1_Xml.Size = new System.Drawing.Size(667, 412);
+            this.tabPage1_Xml.Size = new System.Drawing.Size(603, 352);
             this.tabPage1_Xml.TabIndex = 0;
             this.tabPage1_Xml.Text = "Xml";
             this.tabPage1_Xml.UseVisualStyleBackColor = true;
@@ -130,7 +133,7 @@
             // 
             // button_addStep
             // 
-            this.button_addStep.Location = new System.Drawing.Point(801, 306);
+            this.button_addStep.Location = new System.Drawing.Point(3, 3);
             this.button_addStep.Name = "button_addStep";
             this.button_addStep.Size = new System.Drawing.Size(128, 29);
             this.button_addStep.TabIndex = 3;
@@ -141,6 +144,7 @@
             // button_hideUnhideGridEditor
             // 
             this.button_hideUnhideGridEditor.BackColor = System.Drawing.Color.LimeGreen;
+            this.button_hideUnhideGridEditor.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.button_hideUnhideGridEditor.Location = new System.Drawing.Point(0, 341);
             this.button_hideUnhideGridEditor.Name = "button_hideUnhideGridEditor";
             this.button_hideUnhideGridEditor.Size = new System.Drawing.Size(42, 23);
@@ -149,13 +153,34 @@
             this.button_hideUnhideGridEditor.UseVisualStyleBackColor = false;
             this.button_hideUnhideGridEditor.Click += new System.EventHandler(this.button_hideUnhideGridEditor_Click);
             // 
+            // button_addParam
+            // 
+            this.button_addParam.Location = new System.Drawing.Point(3, 38);
+            this.button_addParam.Name = "button_addParam";
+            this.button_addParam.Size = new System.Drawing.Size(128, 29);
+            this.button_addParam.TabIndex = 5;
+            this.button_addParam.Text = "Add Param To Step";
+            this.button_addParam.UseVisualStyleBackColor = true;
+            this.button_addParam.Click += new System.EventHandler(this.button_addParam_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button_addStep);
+            this.panel1.Controls.Add(this.button_addParam);
+            this.panel1.Location = new System.Drawing.Point(12, 260);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(136, 75);
+            this.panel1.TabIndex = 6;
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_hideUnhideGridEditor);
-            this.Controls.Add(this.button_addStep);
             this.Controls.Add(this.dataGridView_AutoEditor);
             this.Controls.Add(this.button_openAutoFile);
             this.Controls.Add(this.tabControl_AutoViewer);
@@ -167,6 +192,7 @@
             this.tabPage1_Xml.ResumeLayout(false);
             this.tabPage1_Xml.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AutoEditor)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -183,6 +209,8 @@
         private System.Windows.Forms.NotifyIcon notifyIcon_Output;
         private System.Windows.Forms.Button button_addStep;
         private System.Windows.Forms.Button button_hideUnhideGridEditor;
+        private System.Windows.Forms.Button button_addParam;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
