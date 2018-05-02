@@ -8,3 +8,13 @@ c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\Te
 c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csproj.CoreCompileInputs.cache
 c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.exe
 c:\users\nicho\source\repos\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.pdb
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\bin\Debug\TestGridDragDropetc.exe.config
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\bin\Debug\TestGridDragDropetc.exe
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\bin\Debug\TestGridDragDropetc.pdb
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csprojResolveAssemblyReference.cache
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.Form1.resources
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.Properties.Resources.resources
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csproj.GenerateResource.cache
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.csproj.CoreCompileInputs.cache
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.exe
+C:\Users\nicho\Desktop\Autonomous Project\Autonomous-GUI\TestGridDragDropetc\TestGridDragDropetc\obj\Debug\TestGridDragDropetc.pdb

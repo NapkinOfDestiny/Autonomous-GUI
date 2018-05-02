@@ -234,5 +234,15 @@ namespace Autonomous_GUI
         {
             //this will need to add a cell under neath the right row that is selected and add it to a list in the autostep that is that row
         }
+
+        private void webBrowser1_bitBucket_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
