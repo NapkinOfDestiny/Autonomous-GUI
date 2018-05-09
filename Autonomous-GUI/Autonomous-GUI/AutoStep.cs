@@ -24,6 +24,13 @@ namespace Autonomous_GUI
          
         }
 
+        public string getFormated()
+        {
+            string res = FormatTop() + FormatBottom();
+
+
+            return res;
+        }
         
         private string FormatTop()
         {           

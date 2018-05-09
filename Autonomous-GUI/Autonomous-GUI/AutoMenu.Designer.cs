@@ -31,27 +31,28 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.openFileDialog_XmlAuto = new System.Windows.Forms.OpenFileDialog();
-            this.button_openAutoFile = new System.Windows.Forms.Button();
             this.tabControl_AutoViewer = new System.Windows.Forms.TabControl();
             this.tabPage1_Xml = new System.Windows.Forms.TabPage();
             this.textBox_xmlViewer = new System.Windows.Forms.TextBox();
             this.tabPage2_AutoViewer = new System.Windows.Forms.TabPage();
-            this.tabPage3_bitBucket = new System.Windows.Forms.TabPage();
+            this.tabPage3_webViewer = new System.Windows.Forms.TabPage();
             this.webBrowser1_bitBucket = new System.Windows.Forms.WebBrowser();
             this.button_addStep = new System.Windows.Forms.Button();
             this.button_addParam = new System.Windows.Forms.Button();
-            this.button_hideUnhideGridEditor = new System.Windows.Forms.Button();
             this.dataGridView_AutoEditor = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notifyIcon_Output = new System.Windows.Forms.NotifyIcon(this.components);
             this.toolStrip1_basicControls = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_showGrid = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripButton_showGrid = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolStripButton_saveGrid = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tabControl_AutoViewer.SuspendLayout();
             this.tabPage1_Xml.SuspendLayout();
-            this.tabPage3_bitBucket.SuspendLayout();
+            this.tabPage3_webViewer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AutoEditor)).BeginInit();
             this.toolStrip1_basicControls.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -62,22 +63,11 @@
             this.openFileDialog_XmlAuto.FileName = "Auto_.xml";
             this.openFileDialog_XmlAuto.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_XmlAuto_FileOk);
             // 
-            // button_openAutoFile
-            // 
-            this.button_openAutoFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_openAutoFile.Location = new System.Drawing.Point(-18, 184);
-            this.button_openAutoFile.Name = "button_openAutoFile";
-            this.button_openAutoFile.Size = new System.Drawing.Size(132, 23);
-            this.button_openAutoFile.TabIndex = 0;
-            this.button_openAutoFile.Text = "Open";
-            this.button_openAutoFile.UseVisualStyleBackColor = true;
-            this.button_openAutoFile.Click += new System.EventHandler(this.button_openAutoFile_Click);
-            // 
             // tabControl_AutoViewer
             // 
             this.tabControl_AutoViewer.Controls.Add(this.tabPage1_Xml);
             this.tabControl_AutoViewer.Controls.Add(this.tabPage2_AutoViewer);
-            this.tabControl_AutoViewer.Controls.Add(this.tabPage3_bitBucket);
+            this.tabControl_AutoViewer.Controls.Add(this.tabPage3_webViewer);
             this.tabControl_AutoViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_AutoViewer.Location = new System.Drawing.Point(0, 0);
             this.tabControl_AutoViewer.Name = "tabControl_AutoViewer";
@@ -118,21 +108,21 @@
             this.tabPage2_AutoViewer.Location = new System.Drawing.Point(4, 22);
             this.tabPage2_AutoViewer.Name = "tabPage2_AutoViewer";
             this.tabPage2_AutoViewer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2_AutoViewer.Size = new System.Drawing.Size(796, 424);
+            this.tabPage2_AutoViewer.Size = new System.Drawing.Size(933, 424);
             this.tabPage2_AutoViewer.TabIndex = 1;
             this.tabPage2_AutoViewer.Text = "Auto Viewer";
             this.tabPage2_AutoViewer.UseVisualStyleBackColor = true;
             this.tabPage2_AutoViewer.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // tabPage3_bitBucket
+            // tabPage3_webViewer
             // 
-            this.tabPage3_bitBucket.Controls.Add(this.webBrowser1_bitBucket);
-            this.tabPage3_bitBucket.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3_bitBucket.Name = "tabPage3_bitBucket";
-            this.tabPage3_bitBucket.Size = new System.Drawing.Size(796, 424);
-            this.tabPage3_bitBucket.TabIndex = 2;
-            this.tabPage3_bitBucket.Text = "BitBucket";
-            this.tabPage3_bitBucket.UseVisualStyleBackColor = true;
+            this.tabPage3_webViewer.Controls.Add(this.webBrowser1_bitBucket);
+            this.tabPage3_webViewer.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3_webViewer.Name = "tabPage3_webViewer";
+            this.tabPage3_webViewer.Size = new System.Drawing.Size(933, 424);
+            this.tabPage3_webViewer.TabIndex = 2;
+            this.tabPage3_webViewer.Text = "Web";
+            this.tabPage3_webViewer.UseVisualStyleBackColor = true;
             // 
             // webBrowser1_bitBucket
             // 
@@ -140,7 +130,7 @@
             this.webBrowser1_bitBucket.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1_bitBucket.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1_bitBucket.Name = "webBrowser1_bitBucket";
-            this.webBrowser1_bitBucket.Size = new System.Drawing.Size(796, 424);
+            this.webBrowser1_bitBucket.Size = new System.Drawing.Size(933, 424);
             this.webBrowser1_bitBucket.TabIndex = 0;
             this.webBrowser1_bitBucket.Url = new System.Uri("https://bitbucket.org/sciborgs4061/robot-2019/commits/all", System.UriKind.Absolute);
             this.webBrowser1_bitBucket.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_bitBucket_DocumentCompleted);
@@ -165,30 +155,36 @@
             this.button_addParam.UseVisualStyleBackColor = true;
             this.button_addParam.Click += new System.EventHandler(this.button_addParam_Click);
             // 
-            // button_hideUnhideGridEditor
-            // 
-            this.button_hideUnhideGridEditor.BackColor = System.Drawing.Color.LimeGreen;
-            this.button_hideUnhideGridEditor.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.button_hideUnhideGridEditor.Location = new System.Drawing.Point(-39, 213);
-            this.button_hideUnhideGridEditor.Name = "button_hideUnhideGridEditor";
-            this.button_hideUnhideGridEditor.Size = new System.Drawing.Size(132, 23);
-            this.button_hideUnhideGridEditor.TabIndex = 4;
-            this.button_hideUnhideGridEditor.Text = "Show";
-            this.button_hideUnhideGridEditor.UseVisualStyleBackColor = false;
-            this.button_hideUnhideGridEditor.Click += new System.EventHandler(this.button_hideUnhideGridEditor_Click);
-            // 
             // dataGridView_AutoEditor
             // 
             this.dataGridView_AutoEditor.AllowUserToAddRows = false;
             this.dataGridView_AutoEditor.AllowUserToDeleteRows = false;
             this.dataGridView_AutoEditor.AllowUserToOrderColumns = true;
+            this.dataGridView_AutoEditor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView_AutoEditor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView_AutoEditor.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridView_AutoEditor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_AutoEditor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dataGridView_AutoEditor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView_AutoEditor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView_AutoEditor.GridColor = System.Drawing.Color.Orange;
             this.dataGridView_AutoEditor.Location = new System.Drawing.Point(0, 341);
             this.dataGridView_AutoEditor.Name = "dataGridView_AutoEditor";
             this.dataGridView_AutoEditor.Size = new System.Drawing.Size(941, 109);
             this.dataGridView_AutoEditor.TabIndex = 2;
             this.dataGridView_AutoEditor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
             // 
             // notifyIcon_Output
             // 
@@ -204,12 +200,15 @@
             this.toolStrip1_basicControls.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripSeparator2,
-            this.toolStripButton_showGrid});
-            this.toolStrip1_basicControls.Location = new System.Drawing.Point(804, 9);
+            this.toolStripButton_showGrid,
+            this.toolStripSeparator1,
+            this.toolStripButton_saveGrid});
+            this.toolStrip1_basicControls.Location = new System.Drawing.Point(707, 9);
             this.toolStrip1_basicControls.Name = "toolStrip1_basicControls";
-            this.toolStrip1_basicControls.Size = new System.Drawing.Size(128, 25);
+            this.toolStrip1_basicControls.Size = new System.Drawing.Size(225, 25);
             this.toolStrip1_basicControls.TabIndex = 6;
             this.toolStrip1_basicControls.Text = "toolStrip1_basicControls";
+            this.toolStrip1_basicControls.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_basicControls_ItemClicked);
             // 
             // toolStripButton1
             // 
@@ -220,6 +219,12 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(40, 22);
             this.toolStripButton1.Text = "Open";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton_showGrid
             // 
@@ -230,32 +235,35 @@
             this.toolStripButton_showGrid.Name = "toolStripButton_showGrid";
             this.toolStripButton_showGrid.Size = new System.Drawing.Size(70, 22);
             this.toolStripButton_showGrid.Text = "Hide/Show";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 319);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(941, 22);
-            this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "statusStrip1";
+            this.toolStripButton_showGrid.Click += new System.EventHandler(this.toolStripButton_showGrid_Click);
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.button_addStep);
             this.panel1.Controls.Add(this.button_addParam);
-            this.panel1.Controls.Add(this.button_openAutoFile);
-            this.panel1.Controls.Add(this.button_hideUnhideGridEditor);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(796, 0);
+            this.panel1.Location = new System.Drawing.Point(796, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(145, 319);
+            this.panel1.Size = new System.Drawing.Size(145, 304);
             this.panel1.TabIndex = 8;
+            // 
+            // toolStripButton_saveGrid
+            // 
+            this.toolStripButton_saveGrid.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.toolStripButton_saveGrid.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton_saveGrid.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_saveGrid.Image")));
+            this.toolStripButton_saveGrid.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_saveGrid.Name = "toolStripButton_saveGrid";
+            this.toolStripButton_saveGrid.Size = new System.Drawing.Size(60, 22);
+            this.toolStripButton_saveGrid.Text = "Save Grid";
+            this.toolStripButton_saveGrid.ToolTipText = "toolStripButton2";
+            this.toolStripButton_saveGrid.Click += new System.EventHandler(this.toolStripButton_saveGrid_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // MenuForm
             // 
@@ -264,16 +272,16 @@
             this.ClientSize = new System.Drawing.Size(941, 450);
             this.Controls.Add(this.toolStrip1_basicControls);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dataGridView_AutoEditor);
             this.Controls.Add(this.tabControl_AutoViewer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuForm";
+            this.Text = "Auto-GUI";
             this.Load += new System.EventHandler(this.MenuForm_Load);
             this.tabControl_AutoViewer.ResumeLayout(false);
             this.tabPage1_Xml.ResumeLayout(false);
             this.tabPage1_Xml.PerformLayout();
-            this.tabPage3_bitBucket.ResumeLayout(false);
+            this.tabPage3_webViewer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AutoEditor)).EndInit();
             this.toolStrip1_basicControls.ResumeLayout(false);
             this.toolStrip1_basicControls.PerformLayout();
@@ -286,7 +294,6 @@
         #endregion
 
         private System.Windows.Forms.OpenFileDialog openFileDialog_XmlAuto;
-        private System.Windows.Forms.Button button_openAutoFile;
         private System.Windows.Forms.TabControl tabControl_AutoViewer;
         private System.Windows.Forms.TabPage tabPage1_Xml;
         private System.Windows.Forms.TabPage tabPage2_AutoViewer;
@@ -294,16 +301,18 @@
         private System.Windows.Forms.DataGridView dataGridView_AutoEditor;
         private System.Windows.Forms.NotifyIcon notifyIcon_Output;
         private System.Windows.Forms.Button button_addStep;
-        private System.Windows.Forms.Button button_hideUnhideGridEditor;
         private System.Windows.Forms.Button button_addParam;
-        private System.Windows.Forms.TabPage tabPage3_bitBucket;
+        private System.Windows.Forms.TabPage tabPage3_webViewer;
         private System.Windows.Forms.WebBrowser webBrowser1_bitBucket;
         private System.Windows.Forms.ToolStrip toolStrip1_basicControls;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton_showGrid;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.ToolStripButton toolStripButton_saveGrid;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

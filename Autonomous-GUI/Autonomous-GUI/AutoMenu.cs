@@ -41,70 +41,6 @@ namespace Autonomous_GUI
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-        
-        }
-
-     
-        //imports new auto file
-        private void button_openAutoFile_Click(object sender, EventArgs e)
-        {
-
-            //make button cursor do the working thing
-            button_openAutoFile.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-
-            //some temp vars for error checks
-            string tempXmlFilePath = "NO_FILE_PATH";
-            string tempRawXml = "NO_RAW_XML";
-
-            try
-            {
-                if (openFileDialog_XmlAuto.ShowDialog() == DialogResult.OK)
-                {
-
-
-                    //set new xml file path
-                    tempXmlFilePath = System.IO.Path.GetFullPath(openFileDialog_XmlAuto.FileName);
-
-
-
-                    //this bit here is because it doesn't like some of the files (linux spacing) and desplays them badly so this will fix that
-                    using (System.IO.StreamReader sr = new System.IO.StreamReader(openFileDialog_XmlAuto.FileName))
-                    {
-                        //reset rawXml so we don't just append the next file to it
-                        tempRawXml = "";
-
-                        while (sr.EndOfStream != true)
-                        {
-                            tempRawXml += sr.ReadLine() + "\r\n";
-                        }
-
-                    }
-
-                }
-
-                //incase user closed it without getting it keep old values and do nothing
-                if ((tempRawXml != "NO_RAW_XML") & (tempXmlFilePath != "NO_FILE_PATH"))
-                {
-                    xmlFilePath = tempXmlFilePath;
-                    rawXml = tempRawXml;
-                    updateXmlViewer();
-                    notifyOutputGood("Succesfully Imported File", xmlFilePath);
-                                      
-                }
-
-                refresh();
-            }
-            catch (Exception)
-            {
-               //exception error
-                notifyOutputBad("FAILED To Import File (Exception)", openFileDialog_XmlAuto.FileName);
-
-            }
-
-          
-
-            //reset mouse cursor to normal
-            button_openAutoFile.Cursor = System.Windows.Forms.Cursors.Default;
 
         }
 
@@ -201,8 +137,8 @@ namespace Autonomous_GUI
         {
             //create new clumn
             DataGridViewTextBoxColumn newColumn = new DataGridViewTextBoxColumn();
-            newColumn.Name = "testName" + "(" + numberOfBits + ")";
-            numberOfBits++;
+            newColumn.Name = newStepName();
+   
 
            
 
@@ -216,19 +152,14 @@ namespace Autonomous_GUI
             autoSteps.Add(autoStep);
         }
 
-        private void button_hideUnhideGridEditor_Click(object sender, EventArgs e)
+        //provides new name that will not clash with others
+        private string newStepName()
         {
-            if (dataGridView_AutoEditor.Visible == false)
-            {
-                dataGridView_AutoEditor.Visible = true;
-                button_hideUnhideGridEditor.BackColor = System.Drawing.Color.LimeGreen;
-            }
-            else
-            {
-                dataGridView_AutoEditor.Visible = false;
-                button_hideUnhideGridEditor.BackColor = System.Drawing.Color.IndianRed;
-            }
+            numberOfBits++;
+            return "someName" + "(" + (numberOfBits - 1) + ")"; ;
         }
+          
+        
 
         private void button_addParam_Click(object sender, EventArgs e)
         {
@@ -244,5 +175,114 @@ namespace Autonomous_GUI
         {
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+           
+
+            //some temp vars for error checks
+            string tempXmlFilePath = "NO_FILE_PATH";
+            string tempRawXml = "NO_RAW_XML";
+
+            try
+            {
+                if (openFileDialog_XmlAuto.ShowDialog() == DialogResult.OK)
+                {
+
+
+                    //set new xml file path
+                    tempXmlFilePath = System.IO.Path.GetFullPath(openFileDialog_XmlAuto.FileName);
+
+
+
+                    //this bit here is because it doesn't like some of the files (linux spacing) and desplays them badly so this will fix that
+                    using (System.IO.StreamReader sr = new System.IO.StreamReader(openFileDialog_XmlAuto.FileName))
+                    {
+                        //reset rawXml so we don't just append the next file to it
+                        tempRawXml = "";
+
+                        while (sr.EndOfStream != true)
+                        {
+                            tempRawXml += sr.ReadLine() + "\r\n";
+                        }
+
+                    }
+
+                }
+
+                //incase user closed it without getting it keep old values and do nothing
+                if ((tempRawXml != "NO_RAW_XML") & (tempXmlFilePath != "NO_FILE_PATH"))
+                {
+                    xmlFilePath = tempXmlFilePath;
+                    rawXml = tempRawXml;
+                    updateXmlViewer();
+                    notifyOutputGood("Succesfully Imported File", xmlFilePath);
+
+                }
+
+                refresh();
+            }
+            catch (Exception)
+            {
+                //exception error
+                notifyOutputBad("FAILED To Import File (Exception)", openFileDialog_XmlAuto.FileName);
+
+            }
+
+
+
+         
+
+        }
+
+        private void toolStripButton_showGrid_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_AutoEditor.Visible == false)
+            {
+                dataGridView_AutoEditor.Visible = true;
+                panel1.Visible = true;
+                toolStripButton_showGrid.BackColor = System.Drawing.Color.LimeGreen;
+            }
+            else
+            {
+                dataGridView_AutoEditor.Visible = false;
+                panel1.Visible = false;
+                toolStripButton_showGrid.BackColor = System.Drawing.Color.IndianRed;
+            }
+        }
+
+        private void button_openAutoFile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_basicControls_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton_saveGrid_Click(object sender, EventArgs e)
+        {
+
+            foreach (var item in dataGridView_AutoEditor.Columns)
+            {
+
+                foreach (var inat in autoSteps)
+                {
+
+                }
+           
+        }
+
+            foreach (var egg in autoSteps)
+            {
+
+                egg.name = dataGridView_AutoEditor.Columns[egg.index].Name;
+
+                textBox_xmlViewer.Text = egg.getFormated();
+            }
+        }
+
+
     }
 }
